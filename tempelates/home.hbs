@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    
+    <title>Receipt Generator</title>
+
+</head>
+<body id="body">
+    <center>
+        <div class="header">
+            <div class="discount">
+                <p>Discount</p>
+                <button class="mrp" onclick="readList(list, 'mrp');" id="mrp">MRP</button>
+                <button class="d25" onclick="readList(list, 'd25');" id="d25">25%</button>
+                <button class="d35" onclick="readList(list, 'd35');" id="d35">35%</button>
+                <button class="d42" onclick="readList(list, 'd42');" id="d42">42%</button>
+                <button class="d50" onclick="readList(list, 'd50');" id="d50">50%</button>
+            </div>
+
+            <div class="result" id="totals">
+                <div>0 vp</div>
+                <div id="priceDiv">₹0</div>
+                <div>0</div>
+            </div>
+            <div class="resetAndGenerateDiv" id="resetAndGenerateDiv">
+                
+            </div>
+        </div>
+
+        <div id="inputDiv">
+            
+        </div>
+        
+        <div class="parent" id="table">
+            <div class="child gap">
+                <div class="product">Products</div>
+                <div class="vp">VP</div>
+                <div class="price">Price</div>
+
+                <div class="quantity">
+                    <button>-</button><div>qty.</div><button>+</button>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+<script src="/script/home.js"></script>
+</html>

@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #17333e;
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #001f2b;
+    color: white;
+}
+.discount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100dvw;
+    max-width: 800px;
+    font-weight: bold;
+}
+.discount button {
+    font-weight: bold;
+}
+.discount button:hover{
+    background-color: #499f52;
+    color: white;
+    border: 1px solid gray;
+}
+.activeBtn {
+    background-color: #499f52;
+    color: white;
+    border: 1px solid gray;
+}
+
+
+.result {
+    display: flex;
+    background-color: #499f52;
+    justify-content: space-around;
+}
+.result div {
+    font-weight: bold;
+}
+.resetAndGenerateDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+.reset {
+    margin-block: 5px;
+    width: 45dvw;
+    max-width: 370px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.reset:active {
+    background-color: rgb(253, 65, 65);
+}
+.generateReceipt {
+    margin-block: 5px;
+    width: 45dvw;
+    max-width: 370px;
+    height: 30px;
+    border: 2px solid rgb(139, 192, 137);
+    border-radius: 2px;
+    background-color:  #499f52;
+    color: white;
+    font-weight: bold;
+}
+.generateReceipt:active {
+    background-color: white;
+    color: #499f52;
+}
+.inputDiv {
+    display: block;
+    /* flex-direction: column; */
+}
+.remarkInput {
+    width: 90dvw;
+    max-width: 750px;
+    min-height: 50px;
+    text-align: justify;
+    resize: none;
+}
+
+
+.parent {
+    background-color: #d9d9d9;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 7px;
+}
+.gap {
+    margin-bottom: 20px;
+}
+
+
+.product {
+    background-color: #17333e52;
+    width: 175px;
+    text-align: left;
+}
+.vp {
+    background-color: #17333e3a;
+    width: 70px;
+    text-align: left;
+}
+.price {
+    background-color: #17333e3a;
+    flex: 1;
+    text-align: left;
+}
+.quantity {
+    display: flex;
+}
+.quantity div {
+    width: 23px;
+}
+.quantity button {
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+}
+.quantity button:active {
+    border: none;
+    border-radius: 3px;
+    background-color: #499f52;
+}
+
+
+
+
+/* receipt page */
+.bodyDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.top {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #001f2b;
+    height: 20px;
+    width: 100dvw;
+    max-width: 800px;
+}
+.bottom {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #001f2b;
+    height: 20px;
+    width: 100dvw;
+    max-width: 800px;
+}
+.homeBtnContainer {
+    width: 100dvw;
+    max-width: 800px;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+}
+.home {
+    height: 30px;
+    width: 100px;
+    background-color: #385059;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.invoiceDiv {
+    width: 100dvw;
+    max-width: 800px;
+}
+h2 {
+    margin: 20px;
+    color: #385059;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.remarkDiv {
+    display: flex;
+    width: 100dvw;
+    max-width: 800px;
+    min-height: 60px;
+    background-color: #e6ecf0;
+}
+.remark {
+    margin-left: 20px;
+    margin-block: 2px;
+    font-family: fantasy;
+    font-weight: bold;
+    color: #385059;
+}
+.remarkLine {
+    margin: 20px;
+    margin-block: 2px;
+    font-size: 13px;
+    color: #385059;
+    text-align: justify;
+}
+.dateDiv {
+    width: 100dvw;
+    max-width: 800px;
+    height: 40px;
+    
+}
+.date {
+    text-align: end;
+    margin-block: 3px;
+    margin-inline-end: 30px;
+    font-size: 14px;
+    color: #385059;
+}
+
+
+.parentReceipt {
+    width: 100dvw;
+    max-width: 800px;
+    min-height: 72dvh;
+}
+
+.headerReceipt {
+    padding-inline: 15px;
+    height: 40px;
+    background-color: #e6ecf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerProducts {
+    flex: 1;
+    text-align: left;
+    color: #385059;
+    font-size: 13px;
+}
+.headerBtext {
+    margin-left: 15px;
+    color: #385059;
+    font-size: 13px;
+}
+.unitPrice {
+    width: 57px;
+}
+.lineQty {
+    width: 23px;
+}
+.lineTotal {
+    width: 57px;
+}
+
+
+
+.itemsReceipt {
+    padding-inline: 15px;
+    height: 30px;
+    border-bottom: 1px ridge #76a2b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.totalReceipt {
+    margin-block: 2px;
+    height: 47px;
+    background-color: #e6ecf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.totalsVpReceipt {
+    margin-left: 15px;
+    flex: 1;
+    text-align: left;
+    color: #385059;
+    font-size: 15px;
+}
+.totalsQtyReceipt, .totalsAmountReceipt {
+    margin-left: 15px;
+    color: #385059;
+    font-size: 15px;
+}
+.totalsAmountReceipt {
+    width: 55px;
+    padding: 15px;
+    text-align: center;
+    background-color: #385059;
+    color: white;
+    font-size: 15px;
+}
